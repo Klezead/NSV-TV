@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="col-md-1"></div>
+	<div class="container-fluid col-md-10">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- Left menu - Navigation -->
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li id="accueil" class="nsv-navbar active">
+					<a href="./index.html" title="Accueil du site">
+						<i class="fa fa-home fa-2x" aria-hidden="true">&nbsp;</i>
+						<span class="text">Accueil</span>
+					</a>
+				</li>
+				<li id="streams" class="dropdown nsv-navbar active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+						title="Retrouvez nos streams sur Twitch">
+						<i class="fa fa-twitch fa-2x" aria-hidden="true">&nbsp;</i>
+						<span>Streams</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					</ul>
+				</li>
+				<li id="videos" class="nsv-navbar">
+					<a href="./videos.html" title="Retrouvez nos vid&eacute;os Youtube">
+						<i class="fa fa-youtube fa-2x" aria-hidden="true">&nbsp;</i>
+						<span class="text">Vid&eacute;os</span>
+					</a>
+				</li>
+				<li id="about" class="nsv-navbar">
+					<a href="./about.html" title="Qui sommes-nous ?">
+						<i class="fa fa-info-circle fa-2x" aria-hidden="true">&nbsp;</i>
+						<span class="text">&Agrave; Propos</span>
+					</a>
+				</li>
+			</ul>
+			<!-- Right menu - Social network -->
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#twitter" title="Rejoignez nous sur Twitter">
+						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#facebook" title="Rejoignez nous sur Facebook">
+						<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</nav>
+
+<!-- Template d'item de menu des cha&icirc;nes Twitch -->
+<li id="menu-link-hidden-template"><a class="menu-link" href="./channel.html?stream=<channelName>"><channelName></a></li>
