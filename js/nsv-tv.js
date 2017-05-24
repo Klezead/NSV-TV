@@ -78,4 +78,9 @@ $(document).ready(function () {
             $.activeRightNsvNavbar(nsvNavbarId);
         });
     };
+
+    /** Ajoute le bon pied de page **/
+    $.addFooter = function () {
+        $("#footer").load("./components/footer.html");
+    };
 });

@@ -35,12 +35,10 @@
         </div>
 
         <!-- Contenu de la page -->
-        <div id="content" class="stream_content col-md-12"></div>
+        <div id="content" class="stream_content"></div>
     </div>
 
-    <footer class="footer">
-        <p class="text-muted">NSV-TV &copy; 2017</p>
-    </footer>
+    <footer id="footer" class="footer"></footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -55,6 +53,7 @@
             // $.setRandomBackground();
             $.addHeader("#streams");
             $.addTwitchStream();
+            $.addFooter();
         });
 
     </script>
