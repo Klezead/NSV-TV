@@ -363,3 +363,30 @@ body>.container {
 #channel-hidden-template {
     display: none;
 }
+
+#presentation-template {
+    display: none;
+}
+
+.presentationImg {
+    border: solid 3px #6441A4;
+    border-radius: 120px;
+    height: 240px;
+    padding: 10px;
+    text-align: center;
+    width: 240px;
+}
+
+.presentationTitle {
+    color: #6441A4;
+    font-size: 2em;
+    font-variant: small-caps;
+    text-align: center;
+    width: 100%;
+}
+
+.presentationText {    
+    font-size: 1.2em;
+    padding: 10px 0 20px 0;
+    text-align: justify;
+}

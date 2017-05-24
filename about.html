@@ -38,12 +38,23 @@
         <!-- Contenu de la page -->
         <div id="content" class="page_content">
             <div class="row">
-                Test
+                <div class="col-md-3"></div>
+                <div id="presentationDiv" class="col-md-6"></div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </div>
 
     <footer id="footer" class="footer"></footer>
+
+    <!-- Template de présentation des streamers -->
+    <div id="presentation-template" class="col-md-12">
+        <div class="presentationTitle">
+            <img class="presentationImg" />
+            <p class="presentationStreamerName"></p>
+        </div>
+        <p class="presentationText"></p>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -51,9 +62,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- NSV-TV JS -->
     <script src="./js/nsv-tv.js"></script>
+    <!-- NSV-TV About JS -->
+    <script src="./js/nsv-tv-about.js"></script>
     <script>
         $(document).ready(function() {
             $.addHeader("#about");
+            $.createStreamersPresentation();
             $.addFooter();
         });
 
