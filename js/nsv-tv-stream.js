@@ -1,8 +1,13 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert, config, urlParam*/
+
 var twitchChannelName = null;
 var twitchChannel = null;
 var twitchStream = null;
 
 $(document).ready(function () {
+    "use strict";
+
     /** Met &agrave; jour les informations sur la cha&icirc;ne twitch **/
     $.setChannelInfo = function () {
         $("#twitchChannelName").html(twitchChannelName);
@@ -18,26 +23,23 @@ $(document).ready(function () {
 
     /** Met &agrave; jour les informations sur le stream live. **/
     $.setStreamInfo = function () {
-        $("#twitchStatus").html(
-            config.twitch.liveStatus.replace("<game>", twitchChannel.game));
+        $("#twitchStatus").html(config.twitch.liveStatus.replace("<game>", twitchChannel.game));
         $("#twitchTitle").html(twitchChannel.status);
     };
 
     /** Charge les informations de la cha&icirc;ne et du stream depuis twitch **/
     $.loadStream = function () {
-        $.when($.getJSON(
-            config.twitch.apiUrl.streams.replace("<channelName>", twitchChannelName) +
-            "?client_id=" + config.twitch.applicationClientId)).then(function (json) {
+        $.when($.getJSON(config.twitch.apiUrl.streams.replace("<channelName>", twitchChannelName) + "?client_id=" + config.twitch.applicationClientId)).then(function (json) {
             $.setChannelInfo();
             twitchStream = json.stream;
-            if (null == twitchStream) {
+            if (null === twitchStream) {
                 $("#twitchStatus").html("Offline");
             } else {
                 twitchChannel = json.stream.channel;
                 $.setStreamInfo();
             }
         });
-    }
+    };
 
     /** Permet de redimensionner la section #content en fonction de ses &eacute;l&eacute;ments fils **/
     $.resizeStreamDiv = function () {
@@ -46,16 +48,13 @@ $(document).ready(function () {
             $("#twitchStreamDiv").height() +
             $("#twitchTopVideosDiv").height();
         $("#content").height(rightSize + "px");
-    }
+    };
 
     /** Charge les 6 derni&egrave;res vid&eacute;os de la cha&icirc;ne twitch **/
     $.loadVideos = function () {
-        $.when($.getJSON(
-            config.twitch.apiUrl.channels.replace("<channelName>", twitchChannelName) +
-            "/videos?broadcast_type=archive&limit=" + config.twitch.limit +
-            "&client_id=" + config.twitch.applicationClientId)).then(function (json) {
-            var videos = json.videos;
-            var twitchVideo = null;
+        $.when($.getJSON(config.twitch.apiUrl.channels.replace("<channelName>", twitchChannelName) + "/videos?broadcast_type=archive&limit=" + config.twitch.limit + "&client_id=" + config.twitch.applicationClientId)).then(function (json) {
+            var videos = json.videos,
+                twitchVideo = null;
             $.each(videos, function (index, video) {
                 twitchVideo = $("#video-hidden-template").clone();
                 twitchVideo.attr("id", "video_" + video.broadcast_id);
@@ -69,14 +68,14 @@ $(document).ready(function () {
             $("#video-hidden-template").hide();
             $.resizeStreamDiv();
         });
-    }
+    };
 
     /** Permet l'ajout d'une cha&icirc;ne twitch **/
     $.addTwitchStream = function () {
         $("#content").load("./components/stream.html", function () {
             $.when($.getUrlParam()).then(function () {
-                if (null != urlParam["stream"]) {
-                    twitchChannelName = urlParam["stream"];
+                if (null !== urlParam.stream) {
+                    twitchChannelName = urlParam.stream;
                     $('title').html(config.twitch.pageTitle.replace("<channelName>", twitchChannelName));
                     $.loadVideos();
                     $.loadStream();

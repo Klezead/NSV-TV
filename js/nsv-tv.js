@@ -1,7 +1,12 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
 var urlParam = {};
 var config = null;
 
 $(document).ready(function () {
+    "use strict";
+
     /** R&eacute;cup&eacute;ration des &eacute;l&eacute;ments de configurations pr&eacute;sent dans le fichier de configuration JSON **/
     config = $.getJSON({
         'url': "./js/config.json",
@@ -20,11 +25,11 @@ $(document).ready(function () {
 
     /** 2017-05-08T14:07:39Z to 08/05/2017 à 14h07 **/
     $.convertDateToFrench = function (twitchDate) {
-        var dateHeure = twitchDate.split('T');
-        var date = dateHeure[0].split('-');
-        var heure = dateHeure[1].split(':');
-        var frenchDate = date[2] + "/" + date[1] + "/" + date[0];
-        var frenchHour = heure[0] + "h" + heure[1];
+        var dateHeure = twitchDate.split('T'),
+            date = dateHeure[0].split('-'),
+            heure = dateHeure[1].split(':'),
+            frenchDate = date[2] + "/" + date[1] + "/" + date[0],
+            frenchHour = heure[0] + "h" + heure[1];
         return frenchDate + " &agrave; " + frenchHour;
     };
 
@@ -39,7 +44,7 @@ $(document).ready(function () {
         $.each(document.location.search.substr(1).split('&'), function (index, paramElement) {
             var param = paramElement.split('=');
             urlParam[param[0].toString()] = param[1].toString();
-        })
+        });
     };
 
     /** Cr&eacute;ation d'un menu vers une cha&icirc;ne Twitch **/
@@ -54,10 +59,10 @@ $(document).ready(function () {
     /** Cr&eacute;ation des menus twitch en parcourant les streamers depuis le fichier de configuration **/
     $.createStreamersMenuLink = function () {
         $.each(config.streamers, function (index, streamer) {
-            if (null != streamer.twitch) {
+            if (null !== streamer.twitch) {
                 $.createTwitchMenuLink(streamer.twitch.channelName);
             }
-        })
+        });
     };
 
     /** Permet de d&eacute;sactiver les menus pr&eacute;c&eacute;demment actifs **/
