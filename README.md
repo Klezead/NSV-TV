@@ -10,6 +10,6 @@ NSV-TV est, pour le moment, uniquement développé par Klé (Guillaume Feutren).
 
 ## Détails techniques
 Le site est développé avec
-* Bootstrap
-* JQuery
-* Font-Awesome
+* [Bootstrap] (http://getbootstrap.com/)
+* [JQuery] (https://jquery.com/)
+* [Font-Awesome] (http://fontawesome.io/)
