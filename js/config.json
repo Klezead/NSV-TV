@@ -1,71 +1,71 @@
 {
-	"streamers": {
-		"bizbiz73": {
-			"twitch": {
-				"channelName": "Bizbiz73"
-			}
-		},
-		"kle": {
-			"twitch": {
-				"channelName": "KleZeAd"
-			},
-			"youtube": {
-				"channelId": "UCE99qp1niT0IcqePFB1qH8Q",
-				"channelName": "Kl&eacute;"
-			}
-		},
-		"shinnisaac": {
-			"twitch": {
-				"channelName": "ShinnIsaac"
-			}
-		},
-		"tripotinas": {
-			"twitch": {
-				"channelName": "Tripotinas"
-			},
-			"youtube": {
-				"channelId": "UCKOxx1kOdiagELOfYr0mUIw",
-				"channelName": "Tripotin"
-			}
-		},
-		"EclypsiaTVLoL": {
-			"twitch": {
-				"channelName": "EclypsiaTVLoL"
-			}
-		}
-	},
-	"twitch": {
-		"applicationClientId": "tjk7lyl662fioqxqbexo2m9vghl8gn",
-		"apiUrl": {
-			"channels" : "https://api.twitch.tv/kraken/channels/<channelName>",
-			"streams" : "https://api.twitch.tv/kraken/streams/<channelName>"
-		},
-		"limit": 6,
-		"liveStatus": "En live sur <game>",
-		"live": "<i class=\"fa fa-circle\"  aria-hidden=\"true\" />&nbsp;Live",
-		"nsvDefaultProfilImg": "./img/nsv-default-profil-300x300.png",
-		"pageTitle": "NSV TV | <channelName> Stream",
-		"url": {
-			"channel": "https://www.twitch.tv/<channelName>",
-			"channelLinkTitle": "Voir le stream de <channelName>",
-			"chat": "http://www.twitch.tv/<channelName>/chat",
-			"nsvChannel": "./channel.html?stream=<channelName>",
-			"source": "http://player.twitch.tv/?channel=<channelName>&muted=true"
-		}
-	},
-	"video": {
-		"titleNumWords": 7,
-		"titleMaxLength": 50
-	},
-	"youtube": {
-		"applicationId": "AIzaSyDghdHNOqdl8zCrlUKe-YTbNguCRe29--A",
-		"apiUrl": {
-			"search": "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=<channelId>",
-			"playlisteItems": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=<playlistId>"
-		},
-		"maxResults": 6,
-		"nsvTvBestPlaylistId": "PL2r8SkTYvFQNxOVKP7hgpWHFgcA-l82R_",
-		"videoDivTitle": "Les derni&egrave;res vid&eacute;os de <channelName>",
-		"watchUrl": "https://www.youtube.com/watch?v=<videoId>"
-	}
+    "streamers": {
+        "bizbiz73": {
+            "twitch": {
+                "channelName": "Bizbiz73"
+            }
+        },
+        "kle": {
+            "twitch": {
+                "channelName": "KleZeAd"
+            },
+            "youtube": {
+                "channelId": "UCE99qp1niT0IcqePFB1qH8Q",
+                "channelName": "Kl&eacute;"
+            }
+        },
+        "shinnisaac": {
+            "twitch": {
+                "channelName": "ShinnIsaac"
+            }
+        },
+        "tripotinas": {
+            "twitch": {
+                "channelName": "Tripotinas"
+            },
+            "youtube": {
+                "channelId": "UCKOxx1kOdiagELOfYr0mUIw",
+                "channelName": "Tripotin"
+            }
+        },
+        "EclypsiaTVLoL": {
+            "twitch": {
+                "channelName": "EclypsiaTVLoL"
+            }
+        }
+    },
+    "twitch": {
+        "applicationClientId": "tjk7lyl662fioqxqbexo2m9vghl8gn",
+        "apiUrl": {
+            "channels": "https://api.twitch.tv/kraken/channels/<channelName>",
+            "streams": "https://api.twitch.tv/kraken/streams/<channelName>"
+        },
+        "limit": 6,
+        "liveStatus": "En live sur <game>",
+        "live": "<i class=\"fa fa-circle\"  aria-hidden=\"true\" />&nbsp;Live",
+        "nsvDefaultProfilImg": "./img/nsv-default-profil-300x300.png",
+        "pageTitle": "NSV TV | <channelName> Stream",
+        "url": {
+            "channel": "https://www.twitch.tv/<channelName>",
+            "channelLinkTitle": "Voir le stream de <channelName>",
+            "chat": "http://www.twitch.tv/<channelName>/chat",
+            "nsvChannel": "./channel.html?stream=<channelName>",
+            "source": "http://player.twitch.tv/?channel=<channelName>&muted=true"
+        }
+    },
+    "video": {
+        "titleNumWords": 7,
+        "titleMaxLength": 50
+    },
+    "youtube": {
+        "applicationId": "AIzaSyDghdHNOqdl8zCrlUKe-YTbNguCRe29--A",
+        "apiUrl": {
+            "search": "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=<channelId>",
+            "playlisteItems": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=<playlistId>"
+        },
+        "maxResults": 6,
+        "nsvTvBestPlaylistId": "PL2r8SkTYvFQNxOVKP7hgpWHFgcA-l82R_",
+        "videoDivTitle": "Les derni&egrave;res vid&eacute;os de <channelName>",
+        "watchUrl": "https://www.youtube.com/watch?v=<videoId>"
+    }
 }

@@ -1,62 +1,110 @@
 /***********************/
+
+
 /* Bootstrap overwrite */
+
+
 /***********************/
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
-.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
-.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
-.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-	padding: 0;
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    padding: 0;
 }
 
 .row {
-	margin: 0;
+    margin: 0;
 }
 
 .container-fluid {
-	padding: 0;
+    padding: 0;
 }
 
 .navbar {
-	border: none;
-	border-radius: unset;
-	margin-bottom: 0;
+    border: none;
+    border-radius: unset;
+    margin-bottom: 0;
 }
 
 .navbar-collapse {
-	padding: 0;
+    padding: 0;
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: purple;
+.navbar-default .navbar-nav>li>a {
+    color: purple;
 }
 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-	background-color: purple;
-	color: white;
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: purple;
+    color: white;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-	background-color: purple;
-	color: white;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: purple;
+    color: white;
 }
 
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-	color: white;
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: white;
 }
 
 .navbar-default .navbar-nav span {
-	padding: 0;
-	position: inherit;
-	top: -4px;
+    padding: 0;
+    position: inherit;
+    top: -4px;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
     float: left;
     min-width: 60px;
 }
@@ -64,254 +112,260 @@
 .navbar-right {
     float: right !important;
     margin-right: 0;
-	text-align: center;
+    text-align: center;
 }
 
-.dropdown-menu > li > a {
-	color: purple;
-	padding: 10px;
+.dropdown-menu>li>a {
+    color: purple;
+    padding: 10px;
 }
 
-.dropdown-menu > li > a:focus,
-.dropdown-menu > li > a:hover {
-	background-color: purple;
-	color: white;
-	padding: 10px;
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    background-color: purple;
+    color: white;
+    padding: 10px;
 }
+
 
 /***********************/
+
+
 /****** NSV-TV CSS *****/
+
+
 /***********************/
+
 html {
-	min-height: 100%;
-	position: relative;
-	width: 100%;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
 }
 
 body {
-	height: 100%;
-	margin-bottom: 60px;
-	width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+    width: 100%;
 }
 
 .footer {
-	background-color: purple;
-	bottom: 0;
-	color: white;
-	height: 60px;
-	position: absolute;
-	vertical-align: center;
-	width: 100%;
+    background-color: purple;
+    bottom: 0;
+    color: white;
+    height: 60px;
+    position: absolute;
+    vertical-align: center;
+    width: 100%;
 }
 
-body > .container {
-	height: 100%;
-	padding: 0;
-	padding-top: 59px;
-	position: relative;
-	width: 100%;
+body>.container {
+    height: 100%;
+    padding: 0;
+    padding-top: 59px;
+    position: relative;
+    width: 100%;
 }
 
 .background {
-	background-image: url(../img/2.jpg);
-	background-position: top center;
-	height: 100%;
-	opacity: 0.9;
-	position: fixed;
-	width: 100%;
-	z-index: -1;
+    background-image: url(../img/2.jpg);
+    background-position: top center;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
 }
 
 #header {
-	border-bottom: solid 1px purple;
-	color: #fff;
-	position: relative;
+    border-bottom: solid 1px purple;
+    color: #fff;
+    position: relative;
 }
 
 .title {
-	background: unset;
-	bottom: 0;
-	color: white;
-	font-size: 3em;
-	font-stretch: bold;
-	padding: 2em 0;
-	text-align: center;
+    background: unset;
+    bottom: 0;
+    color: white;
+    font-size: 3em;
+    font-stretch: bold;
+    padding: 2em 0;
+    text-align: center;
 }
 
-#header > .menu {
-	position: relative;
-	text-align: center;
+#header>.menu {
+    position: relative;
+    text-align: center;
 }
 
 #menu-link-hidden-template {
-	display: none;
+    display: none;
 }
 
 #streamer-link-template {
-	display: none;
+    display: none;
 }
 
 .streamerLink {
-	margin: 10px 0;
-	text-align: center;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .streamerLink a {
-	color: purple;
-	cursor: pointer;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0);
+    color: purple;
+    cursor: pointer;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
 }
 
 .streamerLink a:hover,
 .streamerLink a:focus {
-	color: purple;
-	cursor: pointer;
-	text-decoration: none;
+    color: purple;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .streamerChannelName {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .streamerLinkDiv {
-	border: solid 4px purple;
-	border-radius: 50px;
-	padding: 10px;
-	text-align: center;
-	width: 70%;
+    border: solid 4px purple;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
 }
 
 .streamerLinkImg {
-	border-radius: 30px;
-	padding: 10px;
-	width: 70%;
+    border-radius: 30px;
+    padding: 10px;
+    width: 70%;
 }
 
 .streamerOffline {
-	color: purple;
-	font-size: 1.2em;
-	font-style: italic;
+    color: purple;
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 .streamerLive {
-	color: red;
-	font-size: 1.2em;
+    color: red;
+    font-size: 1.2em;
 }
 
 .page_content {
-	background-color: white;
-	color: purple;
-	height: 100%;
-	padding-top: 20px;
-	position: relative;
-	opacity: 0.9;
+    background-color: white;
+    color: purple;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+    opacity: 0.9;
 }
 
 .stream_content {
-	background-color: white;
-	color: purple;
-	height: 100%;
-	padding-top: 20px;
-	position: relative;
-	opacity: 0.9;
+    background-color: white;
+    color: purple;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+    opacity: 0.9;
 }
 
 .video_content {
-	background-color: white;
-	color: purple;
-	height: 100%;
-	position: relative;
-	opacity: 0.9;
+    background-color: white;
+    color: purple;
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
 }
 
 #twitchChannelName {
-	color: purple;
-	font-size: 2em;
-	font-variant: small-caps;
-	padding: 0;
-	vertical-align: bottom;
+    color: purple;
+    font-size: 2em;
+    font-variant: small-caps;
+    padding: 0;
+    vertical-align: bottom;
 }
 
 #twitchTitle {
-	padding-bottom: 5px;
-	text-align: right;
+    padding-bottom: 5px;
+    text-align: right;
 }
 
 .twitch_stream {
-	min-height: 500px;
-	min-width: 700px;
+    min-height: 500px;
+    min-width: 700px;
 }
 
 .twitch_chat {
-	height: inherit;
-	min-height: 500px;
+    height: inherit;
+    min-height: 500px;
 }
 
 #twitchChannel,
 #twitchChat {
-	min-height: 500px;
+    min-height: 500px;
 }
 
 #twitchTopVideosDiv {
-	min-height: 279px;
+    min-height: 279px;
 }
 
 .videoDivTitle {
-	border-bottom: solid 1px purple;
-	color: purple;
-	font-size: 1.5em;
-	margin-bottom: 10px;
-	margin-top: 20px;
+    border-bottom: solid 1px purple;
+    color: purple;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .video,
 .video:hover,
 .video:focus {
-	color: purple;
-	cursor: pointer;
-	margin-bottom: 15px;
+    color: purple;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .video_thumbnail {
-	border: solid 1px purple;
-	border-radius: 16px;
+    border: solid 1px purple;
+    border-radius: 16px;
 }
 
 .channel_thumbnail {
-	border: solid 1px purple;
-	border-radius: 16px;
-	height: 150px;
-	width: 150px;
+    border: solid 1px purple;
+    border-radius: 16px;
+    height: 150px;
+    width: 150px;
 }
 
-.video_info > .video_title,
-.video_info > .video_game,
-.video_info > .stream_date {
-	padding: 0 10px;
+.video_info>.video_title,
+.video_info>.video_game,
+.video_info>.stream_date {
+    padding: 0 10px;
 }
 
-.video_info > .video_title {
-	font-size: 1.2em;
+.video_info>.video_title {
+    font-size: 1.2em;
 }
 
-.video_info > .video_game {
-	font-style: italic;
-	font-variant: small-caps;
+.video_info>.video_game {
+    font-style: italic;
+    font-variant: small-caps;
 }
 
 #video-hidden-template {
-	display: none;
+    display: none;
 }
 
 #channel-hidden-template {
-	display: none;
+    display: none;
 }
 
 #footer {
-	border-top: solid 1px purple;
-	color: #fff;
-	min-height: 50px;
-	padding: 15px;
+    border-top: solid 1px purple;
+    color: #fff;
+    min-height: 50px;
+    padding: 15px;
 }
