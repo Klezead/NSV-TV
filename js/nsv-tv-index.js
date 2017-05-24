@@ -23,7 +23,7 @@ $(document).ready(function () {
                     });
                 } else {
                     streamerLink.attr("id", "streamerLink" + streamer.twitch.channelName);
-                    if (null !== streamJSON.stream.channel.logo) {
+                    if (undefined !== streamJSON.stream.channel.logo) {
                         streamerLink.find(".streamerLinkImg").attr("src", streamJSON.stream.channel.logo);
                     } else {
                         streamerLink.find(".streamerLinkImg").attr("src", config.twitch.nsvDefaultProfilImg);

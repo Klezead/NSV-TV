@@ -74,7 +74,7 @@ $(document).ready(function () {
     $.addTwitchStream = function () {
         $("#content").load("./components/stream.html", function () {
             $.when($.getUrlParam()).then(function () {
-                if (null !== urlParam.stream) {
+                if (undefined !== urlParam.stream) {
                     twitchChannelName = urlParam.stream;
                     $('title').html(config.twitch.pageTitle.replace("<channelName>", twitchChannelName));
                     $.loadVideos();

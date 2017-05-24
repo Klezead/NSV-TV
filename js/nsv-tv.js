@@ -59,7 +59,7 @@ $(document).ready(function () {
     /** Cr&eacute;ation des menus twitch en parcourant les streamers depuis le fichier de configuration **/
     $.createStreamersMenuLink = function () {
         $.each(config.streamers, function (index, streamer) {
-            if (null !== streamer.twitch) {
+            if (undefined !== streamer.twitch) {
                 $.createTwitchMenuLink(streamer.twitch.channelName);
             }
         });

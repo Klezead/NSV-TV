@@ -58,7 +58,7 @@ $(document).ready(function () {
             $.loadVideosFromPlaylist(config.youtube.nsvTvBestPlaylistId, $("#bestPlaylistVideos"));
             // Chagement des vid&eacute;os des streamers pr&eacute;sent sur Youtube **/
             $.each(config.streamers, function (index, streamer) {
-                if (null !== streamer.youtube) {
+                if (undefined !== streamer.youtube) {
                     $.loadVideosFromChannel(streamer.youtube.channelId, streamer.youtube.channelName);
                 }
             });
