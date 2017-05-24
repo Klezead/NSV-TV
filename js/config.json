@@ -1,4 +1,12 @@
 {
+    "social": {
+        "facebook": {
+            "url": "https://www.facebook.com/NSVTVfr/"
+        },
+        "twitter": {
+            "url": "https://twitter.com/?lang=fr"
+        }
+    },
     "streamers": {
         "bizbiz73": {
             "twitch": {

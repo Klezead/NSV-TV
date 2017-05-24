@@ -65,6 +65,12 @@ $(document).ready(function () {
         });
     };
 
+    /** Configure les boutons de réseaux sociaux avec les URLs issues du fichier de configuration **/
+    $.createSocialsMediaLink = function () {
+        $("#facebookLink").attr("href", config.social.facebook.url);
+        $("#twitterLink").attr("href", config.social.twitter.url);
+    };
+
     /** Permet de d&eacute;sactiver les menus pr&eacute;c&eacute;demment actifs **/
     $.unactiveAllNsvNavbar = function () {
         $(".nsv-navbar").removeClass("active");
@@ -80,6 +86,7 @@ $(document).ready(function () {
     $.addHeader = function (nsvNavbarId) {
         $("#header").load("./components/header.html", function () {
             $.createStreamersMenuLink();
+            $.createSocialsMediaLink();
             $.activeRightNsvNavbar(nsvNavbarId);
         });
     };
