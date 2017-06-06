@@ -150,10 +150,12 @@ body {
 
 #footer {
     background-color: #6441A4;
+    border-top: solid 1px white;
     bottom: 0;
     color: white;
     font-size: 1.2em;
-    height: 60px;
+    min-height: 60px;
+    padding-left: 15px;
     padding-top: 1.2em;
     position: absolute;
     width: 100%;
@@ -264,23 +266,6 @@ body>.container {
     opacity: 0.9;
 }
 
-.stream_content {
-    background-color: white;
-    color: #6441A4;
-    height: 100%;
-    padding-top: 20px;
-    position: relative;
-    opacity: 0.9;
-}
-
-.video_content {
-    background-color: white;
-    color: #6441A4;
-    height: 100%;
-    position: relative;
-    opacity: 0.9;
-}
-
 #twitchChannelName {
     color: #6441A4;
     font-size: 2em;
@@ -310,7 +295,7 @@ body>.container {
 }
 
 #twitchTopVideosDiv {
-    min-height: 279px;
+    /* min-height: 395 px; --> */
 }
 
 .videoDivTitle {

@@ -76,7 +76,7 @@
             "search": "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=<channelId>",
             "playlisteItems": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=<playlistId>"
         },
-        "maxResults": 6,
+        "maxResults": 12,
         "nsvTvBestPlaylistId": "PL2r8SkTYvFQNxOVKP7hgpWHFgcA-l82R_",
         "videoDivTitle": "Les derni&egrave;res vid&eacute;os de <channelName>",
         "watchUrl": "https://www.youtube.com/watch?v=<videoId>"

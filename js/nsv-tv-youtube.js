@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     /** Charge l'ensemble des sections et les ajoute dans la page **/
     $.addYoutubeVideos = function () {
-        $("#content").load("./components/youtube.html", function () {
+        $("#video_content").load("./components/youtube.html", function () {
             // Chargement de la playlist 'NSV-TV Best Vid&eacute;os' Playlist
             $.loadVideosFromPlaylist(config.youtube.nsvTvBestPlaylistId, $("#bestPlaylistVideos"));
             // Chagement des vid&eacute;os des streamers pr&eacute;sent sur Youtube **/

@@ -41,15 +41,6 @@ $(document).ready(function () {
         });
     };
 
-    /** Permet de redimensionner la section #content en fonction de ses &eacute;l&eacute;ments fils **/
-    $.resizeStreamDiv = function () {
-        var rightSize = $("#twitchChannelNameDiv").height() +
-            $("#twitchStatusDiv").height() +
-            $("#twitchStreamDiv").height() +
-            $("#twitchTopVideosDiv").height();
-        $("#content").height(rightSize + "px");
-    };
-
     /** Charge les 6 derni&egrave;res vid&eacute;os de la cha&icirc;ne twitch **/
     $.loadVideos = function () {
         $.when($.getJSON(config.twitch.apiUrl.channels.replace("<channelName>", twitchChannelName) + "/videos?broadcast_type=archive&limit=" + config.twitch.limit + "&client_id=" + config.twitch.applicationClientId)).then(function (json) {
@@ -66,7 +57,6 @@ $(document).ready(function () {
                 $("#twitchVideos").append(twitchVideo);
             });
             $("#video-hidden-template").hide();
-            $.resizeStreamDiv();
         });
     };
 
