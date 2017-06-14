@@ -349,6 +349,10 @@ body>.container {
     display: none;
 }
 
+#patchnote-hidden-template {
+    display: none;
+}
+
 #presentation-template {
     display: none;
 }

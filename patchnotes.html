@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NSV-TV. Next Stop Valhalla. Team multigaming. Streaming, Videos. Team NSV. KleZeAd ShinnIsaac Tripotin BizBiz">
+    <meta name="author" content="NSV-TV - PatchNotes">
+    <title>NSV-TV | Accueil</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Icon CSS -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- NSV-TV CSS -->
+    <link href="css/nsv-tv.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Ent&icirc;te de la page -->
+    <div id="header"></div>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Background with opacity -->
+        <div class="background"></div>
+
+        <div class="title">
+            Next Stop Valhalla <i class="fa fa-tv" aria-hidden="true"> α </i>
+        </div>
+
+        <!-- Contenu de la page -->
+        <div id="content" class="page_content">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="patch_notes_content" class="col-md-8"></div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer"></footer>
+
+    <!-- Template de représentation des patchnotes -->
+    <div id="patchnote-hidden-template" class="panel panel-default patchnote">
+        <div class="panel-heading"></div>
+        <div class="panel-body"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- NSV-TV JS -->
+    <script src="./js/nsv-tv.js"></script>
+    <!-- NSV-TV Index JS -->
+    <script src="./js/nsv-tv-patchnote.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.addHeader("#about");
+            $.createPatchNotesPresentation();
+            $.addFooter();
+        });
+
+    </script>
+</body>
+
+</html>

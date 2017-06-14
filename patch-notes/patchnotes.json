@@ -1,0 +1,14 @@
+{
+    "patchs": {
+        "patch-alpha.0.2": {
+            "version": "Alpha Zéro Deux",
+            "date": "14/06/2017",
+            "description": "./patch-notes/alpha/alpha.0.2.html"
+        },
+        "patch-alpha.0.1": {
+            "version": "Alpha Zéro Un",
+            "date": "06/06/2017",
+            "description": "./patch-notes/alpha/alpha.0.1.html"
+        }
+    }
+}

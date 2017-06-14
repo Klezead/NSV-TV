@@ -3,6 +3,7 @@
 
 var urlParam = {};
 var config = null;
+var patchNotes = null;
 
 $(document).ready(function () {
     "use strict";
@@ -13,6 +14,13 @@ $(document).ready(function () {
         'async': false
     });
     config = JSON.parse(config.responseText);
+    
+    /** R&eacute;cup&eacute;ration des informations des patchnotes pr&eacute;sent dans le fichier de patchnotes JSON **/
+    patchNotes = $.getJSON({
+        'url': "./patch-notes/patchnotes.json",
+        'async': false
+    });
+    patchNotes = JSON.parse(patchNotes.responseText);
 
     /** Permet de r&eacute;duire la taille des titres des vid&eacute;os et stream **/
     $.reduceTitleTextSize = function (textToReduce) {
