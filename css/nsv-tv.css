@@ -239,6 +239,8 @@ body>.container {
 }
 
 .streamerHeaderImg {
+    background-position: top center;
+    background-size: cover;
     height: 180px;
 }
 

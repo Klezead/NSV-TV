@@ -19,7 +19,7 @@ $(document).ready(function () {
                         } else {
                             streamerLink.find(".streamerLinkImg").attr("src", config.twitch.nsvDefaultProfilImg);
                         }
-                        streamerLink.find(".streamerHeaderImg").attr("src", channelJSON.profile_banner);
+                        streamerLink.find(".streamerHeaderImg").css("background-image", "url(" + channelJSON.profile_banner + ")");
                         $("#streamersLink").append(streamerLink);
                     });
                 } else {
@@ -29,7 +29,7 @@ $(document).ready(function () {
                     } else {
                         streamerLink.find(".streamerLinkImg").attr("src", config.twitch.nsvDefaultProfilImg);
                     }
-                    streamerLink.find(".streamerHeaderImg").attr("src", streamJSON.stream.channel.profile_banner);
+                    streamerLink.find(".streamerHeaderImg").css("background-image", "url(" + streamJSON.stream.channel.profile_banner + ")");
                     streamerLink.find(".streamerChannelStatus").addClass("btn-danger");
                     streamerLink.find(".streamerChannelStatus").removeClass("btn-default");
                     streamerLink.find(".streamerChannelStatus").html(config.twitch.live);
