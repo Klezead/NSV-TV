@@ -28,7 +28,7 @@
             "twitch": {
                 "channelName": "ShinnIsaac"
             },
-            "presentation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet."
+            "presentation": "<p>Coucou, moi c'est Shinn (comme la Chine). Je suis un joueur invétéré.</p><p>Si je ne suis pas le meilleur des meilleurs je suis tout de même assez douer pour m'adapter rapidement et prendre un jeu en main.</p><p>J'aime à peu près tout les genres de jeux, sauf les MOBA. En revanche, j'adoooore les MMOs ! Et s'il y a une connerie à faire comptez sur moi !"
         },
         "tripotinas": {
             "twitch": {
@@ -37,12 +37,6 @@
             "youtube": {
                 "channelId": "UCKOxx1kOdiagELOfYr0mUIw",
                 "channelName": "Tripotin"
-            },
-            "presentation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet."
-        },
-        "EclypsiaTVLoL": {
-            "twitch": {
-                "channelName": "EclypsiaTVLoL"
             },
             "presentation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus semper, sagittis nulla sed, vehicula nisl. Integer ut urna id turpis blandit finibus. Nam bibendum varius velit sed dapibus. Nulla ultrices diam sed dui luctus, non euismod nulla rutrum. Integer ultricies eget nisl non ullamcorper. Ut maximus vitae nisl at porttitor. In non sagittis arcu. Ut eget diam sed risus lobortis amet."
         }
