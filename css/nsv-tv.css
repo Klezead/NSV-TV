@@ -226,17 +226,42 @@ body>.container {
     text-align: center;
 }
 
+.streamerAboutDiv {
+    border: solid 1px #6441A4;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.streamerAboutHeaderImg {
+    background-position: top center;
+    background-size: cover;
+    height: 350px;
+}
+
 .streamerHeaderImg {
     height: 180px;
 }
 
 .streamerLinkImg {
     background: white;
-    border: solid 4px white;
+    border: solid 1px #6441A4;
     border-radius: 100px;
     position: relative;
     top: -48px;
     width: 30%;
+}
+
+.streamerAboutImg {
+    background: white;
+    border: solid 1px #6441A4;
+    border-radius: 100px;
+    position: relative;
+    top: -96px;
+    width: 20%;
+}
+
+.streamerAboutChannelName {
+    margin-top: -80px;
 }
 
 .streamerChannel {
@@ -367,6 +392,6 @@ body>.container {
 
 .presentationText {
     font-size: 1.2em;
-    padding: 10px 0 20px 0;
+    padding: 20px;
     text-align: justify;
 }
