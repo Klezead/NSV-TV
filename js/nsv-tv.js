@@ -101,6 +101,7 @@ $(document).ready(function () {
 
     /** Ajoute le bon pied de page **/
     $.addFooter = function () {
+        $.setRandomBackground();
         $("#footer").load("./components/footer.html");
     };
 });

@@ -170,10 +170,10 @@ body>.container {
 }
 
 .background {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/1.jpg);
     background-position: top center;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
     position: fixed;
     width: 100%;
     z-index: -1;
