@@ -208,53 +208,34 @@ body>.container {
     display: none;
 }
 
-.streamerLink {
-    margin: 10px 0;
-    text-align: center;
-}
-
-.streamerLink a {
-    color: #6441A4;
-    cursor: pointer;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0);
-}
-
-.streamerLink a:hover,
-.streamerLink a:focus {
-    color: #6441A4;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.streamerChannelName {
-    font-size: 1.5em;
-}
-
 .streamerLinkDiv {
-    border: solid 4px #6441A4;
-    border-radius: 50px;
-    padding: 10px;
+    border: solid 1px #6441A4;
+    margin: 15px auto;
+    max-width: 330px;
+    padding-bottom: 15px;
     text-align: center;
-    width: 70%;
+}
+
+.streamerHeaderImg {
+    height: 180px;
 }
 
 .streamerLinkImg {
-    border-radius: 30px;
-    padding: 10px;
-    width: 70%;
+    background: white;
+    border: solid 4px white;
+    border-radius: 100px;
+    position: relative;
+    top: -48px;
+    width: 30%;
 }
 
-.streamerOffline {
-    color: #6441A4;
+.streamerChannel {
+    margin-top: -60px;
+}
+
+.streamerLinkDiv a {
     font-size: 1.2em;
     font-style: italic;
-}
-
-.streamerLive {
-    color: red;
-    font-size: 1.2em;
 }
 
 .page_content {

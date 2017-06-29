@@ -79,11 +79,14 @@
 
     <!-- Template de représentation des streamers pour la page d'accueil -->
     <div id="streamer-link-template" class="streamerLink col-md-4">
-        <a class="streamerLinkDiv col-md-12">
-            <div class="streamerChannelName"></div>
+        <div class="streamerLinkDiv">
+            <img class="streamerHeaderImg col-md-12" src="../img/2.jpg" />
             <img class="streamerLinkImg" />
-            <div class="streamerOffline">Offline</div>
-        </a>
+            <div class="streamerChannel caption">
+                <h3 class="streamerChannelName"></h3>
+                <a class="btn btn-default streamerChannelStatus" role="button">Offline</a>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

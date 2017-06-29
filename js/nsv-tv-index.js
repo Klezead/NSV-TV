@@ -9,7 +9,7 @@ $(document).ready(function () {
             $.when($.getJSON(config.twitch.apiUrl.streams.replace("<channelName>", streamer.twitch.channelName) + "?client_id=" + config.twitch.applicationClientId)).then(function (streamJSON) {
 
                 var streamerLink = $("#streamer-link-template").clone();
-                streamerLink.find(".streamerLinkDiv").attr("href", config.twitch.url.nsvChannel.replace("<channelName>", streamer.twitch.channelName));
+                streamerLink.find(".streamerChannelStatus").attr("href", config.twitch.url.nsvChannel.replace("<channelName>", streamer.twitch.channelName));
                 streamerLink.attr("id", "streamerLink" + streamer.twitch.channelName);
                 streamerLink.find(".streamerChannelName").html(streamer.twitch.channelName);
                 if (null === streamJSON.stream) {
@@ -19,6 +19,7 @@ $(document).ready(function () {
                         } else {
                             streamerLink.find(".streamerLinkImg").attr("src", config.twitch.nsvDefaultProfilImg);
                         }
+                        streamerLink.find(".streamerHeaderImg").attr("src", channelJSON.profile_banner);
                         $("#streamersLink").append(streamerLink);
                     });
                 } else {
@@ -28,9 +29,10 @@ $(document).ready(function () {
                     } else {
                         streamerLink.find(".streamerLinkImg").attr("src", config.twitch.nsvDefaultProfilImg);
                     }
-                    streamerLink.find(".streamerOffline").addClass("streamerLive");
-                    streamerLink.find(".streamerOffline").removeClass("streamerOffline");
-                    streamerLink.find(".streamerLive").html(config.twitch.live);
+                    streamerLink.find(".streamerHeaderImg").attr("src", streamJSON.stream.channel.profile_banner);
+                    streamerLink.find(".streamerChannelStatus").addClass("btn-danger");
+                    streamerLink.find(".streamerChannelStatus").removeClass("btn-default");
+                    streamerLink.find(".streamerChannelStatus").html(config.twitch.live);
                     $("#streamersLink").append(streamerLink);
                 }
             });
