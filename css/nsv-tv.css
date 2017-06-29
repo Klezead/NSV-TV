@@ -204,6 +204,16 @@ body>.container {
     display: none;
 }
 
+.siteVersion {    
+    position: absolute;
+    right: 15px;
+}
+
+.siteVersion a,
+.siteVersion a:hover {
+    color: white;
+}
+
 #streamer-link-template {
     display: none;
 }
