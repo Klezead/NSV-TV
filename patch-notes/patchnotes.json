@@ -1,5 +1,10 @@
 {
     "patchs": {
+        "patch-alpha.0.4": {
+            "version": "Alpha Zéro Quatre",
+            "date": "30/06/2017",
+            "description": "./patch-notes/alpha/alpha.0.4.html"
+        },
         "patch-alpha.0.3": {
             "version": "Alpha Zéro Trois",
             "date": "29/06/2017",
