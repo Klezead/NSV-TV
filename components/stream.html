@@ -23,7 +23,7 @@
         <iframe id="twitchChannel" frameborder="0" scrolling="no" width="100%" height="100%">
 		</iframe>
     </div>
-    <div class="twitch_chat col-md-3">
+    <div class="twitch_chat col-md-3 hidden-sm hidden-xs">
         <iframe id="twitchChat" frameborder="0" scrolling="no" width="100%" height="100%">
 		</iframe>
     </div>
@@ -33,21 +33,23 @@
 <!-- Twitch VODs -->
 <div id="twitchTopVideosDiv" class="row">
     <div class="col-md-12">
-        <div class="col-md-2"></div>
-        <div class="videoDivTitle col-md-8">
+        <div class="col-sm-2 col-md-2 hidden-xs"></div>
+        <div class="videoDivTitle col-xs-12 col-sm-8 col-md-8">
             Les derniers streams en VOD
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-sm-2 col-md-2 hidden-xs"></div>
     </div>
-    <div class="col-md-2"></div>
-    <div id="twitchVideos" class="col-md-8"></div>
-    <div class="col-md-2"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="col-sm-2 col-md-2 hidden-xs"></div>
+        <div id="twitchVideos" class="col-xs-12 col-sm-8 col-md-8"></div>
+        <div class="col-sm-2 col-md-2 hidden-xs"></div>
+    </div>
 </div>
 
 <!-- Template pour les vid&eacute;os twitch -->
-<a id="video-hidden-template" target="_blank" title="Voir la vid&eacute;o sur Twitch" class="video col-md-6">
-    <img class="video_thumbnail col-md-4" />
-    <div class="video_info col-md-8">
+<a id="video-hidden-template" target="_blank" title="Voir la vid&eacute;o sur Twitch" class="video col-xs-12 col-sm-6 col-md-6">
+    <img class="video_thumbnail cols-xs-12 col-sm-4 col-md-4" />
+    <div class="video_info col-xs-12 col-sm-8 col-md-8">
         <div class="video_title col-md-12"></div>
         <div class="video_game"></div>
         <div class="stream_date"></div>

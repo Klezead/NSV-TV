@@ -75,6 +75,10 @@
     padding: 0;
 }
 
+.navbar-default .navbar-brand {
+    color: #6441A4;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #6441A4;
 }
@@ -102,11 +106,6 @@
     padding: 0;
     position: inherit;
     top: -4px;
-}
-
-.navbar-nav>li {
-    float: left;
-    min-width: 60px;
 }
 
 .navbar-right {
@@ -148,6 +147,10 @@ body {
     width: 100%;
 }
 
+p {
+    margin: 15px;
+}
+
 #footer {
     background-color: #6441A4;
     border-top: solid 1px white;
@@ -164,7 +167,7 @@ body {
 body>.container {
     height: 100%;
     padding: 0;
-    padding-top: 59px;
+    padding-top: 30px;
     position: relative;
     width: 100%;
 }
@@ -172,8 +175,9 @@ body>.container {
 .background {
     background-image: url(../img/1.jpg);
     background-position: top center;
+    background-size: cover;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
     position: fixed;
     width: 100%;
     z-index: -1;
@@ -189,7 +193,7 @@ body>.container {
     background: unset;
     bottom: 0;
     color: white;
-    font-size: 3em;
+    font-size: 3.2em;
     font-stretch: bold;
     padding: 2em 0;
     text-align: center;
@@ -204,7 +208,7 @@ body>.container {
     display: none;
 }
 
-.siteVersion {    
+.siteVersion {
     position: absolute;
     right: 15px;
 }
@@ -263,7 +267,7 @@ body>.container {
 }
 
 .streamerAboutChannelName {
-    margin-top: -80px;
+    margin-top: -50px;
 }
 
 .streamerChannel {
@@ -289,22 +293,18 @@ body>.container {
     font-size: 2em;
     font-variant: small-caps;
     padding: 0;
+    padding-left: 15px;
     vertical-align: bottom;
 }
 
 #twitchTitle {
     padding-bottom: 5px;
+    padding-left: 15px;
     text-align: right;
 }
 
-.twitch_stream {
-    min-height: 500px;
-    min-width: 700px;
-}
-
-.twitch_chat {
-    height: inherit;
-    min-height: 500px;
+#twitchStatus {
+    padding-left: 15px;
 }
 
 #twitchChannel,
@@ -314,6 +314,10 @@ body>.container {
 
 #twitchTopVideosDiv {
     /* min-height: 395 px; --> */
+}
+
+#twitchVideos {
+    text-align: center;
 }
 
 .videoDivTitle {
@@ -329,12 +333,15 @@ body>.container {
 .video:focus {
     color: #6441A4;
     cursor: pointer;
+    margin: auto;
     margin-bottom: 15px;
 }
 
 .video_thumbnail {
     border: solid 1px #6441A4;
     border-radius: 16px;
+    margin: auto;
+    text-align: center;
 }
 
 .channel_thumbnail {
@@ -344,10 +351,22 @@ body>.container {
     width: 150px;
 }
 
+.video_info {
+    text-align: left;
+}
+
 .video_info>.video_title,
 .video_info>.video_game,
 .video_info>.stream_date {
     padding: 0 10px;
+}
+
+.video_info>.video_title {
+    padding: 10px;
+}
+
+.video_info>.stream_date {
+    padding-bottom: 20px;
 }
 
 .video_info>.video_title {
@@ -394,6 +413,9 @@ body>.container {
 
 .presentationText {
     font-size: 1.2em;
-    padding: 20px;
     text-align: justify;
+}
+
+.yt-section {
+    text-align: center
 }

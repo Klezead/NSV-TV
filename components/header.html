@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid col-md-12">
+    <div class="container navbar-left">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nsv-navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
+            <div class="navbar-brand hidden-sm hidden-md hidden-lg">
+                Next Stop Valhalla <i class="fa fa-tv" aria-hidden="true" />
+            </div>
         </div>
         <!-- Left menu - Navigation -->
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="nsv-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li id="accueil" class="nsv-navbar active">
                     <a href="./index.html" title="Accueil du site">
@@ -18,7 +21,7 @@
                         <span class="text">Accueil</span>
                     </a>
                 </li>
-                <li id="streams" class="dropdown nsv-navbar active">
+                <li id="streams" class="dropdown nsv-navbar">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Retrouvez nos streams sur Twitch">
                         <i class="fa fa-twitch fa-2x" aria-hidden="true">&nbsp;</i>
                         <span>Streams</span>
@@ -41,15 +44,17 @@
                 </li>
             </ul>
             <!-- Right menu - Social network -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <li>
                     <a id="twitterLink" href="#twitter" title="Rejoignez nous sur Twitter">
-                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true">&nbsp;</i>
+                        <span class="hidden-sm hidden-md hidden-lg">Suivez nous sur Twitter</span>
                     </a>
                 </li>
                 <li>
                     <a id="facebookLink" href="#facebook" title="Rejoignez nous sur Facebook">
-                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true">&nbsp;</i>
+                        <span class="hidden-sm hidden-md hidden-lg">Suivez nous sur Facebook</span>
                     </a>
                 </li>
             </ul>
